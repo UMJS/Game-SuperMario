@@ -28,7 +28,7 @@
 }
 
 .jump-mario{
-    animation: mario-animation 500ms ease-out;
+    animation: mario-animation 250ms ease-out;
 }
 
 .cloud-game{
