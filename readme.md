@@ -33,4 +33,18 @@ Game simples utilizando DOM para fazer a manipulação do HTML para criar intera
 Inicialmente as imagens foram inseridas separadas das classes onde contém as animações.
 Onde as animações foram criadas dentro do CSS em classes distintas.
 
+Documentation:
+
+The <!DOCTYPE html> declaration specifies the document type and HTML version.
+The <html> element is the root element of an HTML page and contains all other HTML elements.
+The <head> element contains metadata about the document, such as the document title, stylesheets, and scripts.
+The <meta> element provides metadata about the document, such as the character encoding, viewport, author, and description.
+The <link> element is used to link external resources, such as stylesheets and favicons.
+The <body> element contains the visible content of the HTML document.
+The <div> element is a container for HTML elements and is used to group related elements together.
+The <img> element is used to embed images in an HTML page and contains attributes such as src, alt, and class.
+The <p> element is used to define a paragraph of text.
+The <footer> element defines a footer for a document or section and is often used to provide copyright or contact information.
+The <script> element is used to embed or reference JavaScript code and contains the src and
+
 # Volte sempre! # 😉

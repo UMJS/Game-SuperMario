@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Ubaldo Meireles de Jesus Sousa" />
     <meta name="description" content="Jogo do Mario em JavaScript" />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="./css/mobile.css" />
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./img/favicon.ico" />
+
     <title>Super Mario</title>
   </head>
+
   <body>
+    <!-- Game board -->
     <div class="game-board">
       <img src="./img/clouds-gamer.png" class="clouds-1" alt="nuvens" />
       <img src="./img/clouds-gamer.png" class="clouds-2" alt="nuvens" />
@@ -19,6 +27,7 @@
       <img src="./img/mario-stop.png" class="mario" alt="personagem Mario parado" />
       <img src="./img/pipe-game.png" class="pipe" alt="cano" />
       <img src="./img/grass.png" class="grass" alt="grama" />
+
       <div class="floor">
         <img src="./img/floor.png" class="floor-1" alt="chão" />
         <img src="./img/floor.png" class="floor-2" alt="chão" />
@@ -26,12 +35,15 @@
       </div>
     </div>
 
+    <!-- Start text -->
     <p id="text-start">Para jogar, pressione</p>
 
+    <!-- Footer -->
     <footer class="footer">
       Desenvolvido por Ubaldo Meireles de Jesus Sousa
     </footer>
 
+    <!-- JavaScript -->
     <script defer src="./js/script.js"></script>
   </body>
 </html>

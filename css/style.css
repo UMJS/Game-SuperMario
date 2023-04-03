@@ -3,66 +3,56 @@
 * {
     margin: 0;
     border: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(236, 236, 236);
 }
-
 
 .game-board {
     width: 100%;
     height: 82vh;
-    border-top: 100px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
     background: linear-gradient(#87CEE8, #E0F6FF);
 }
 
-
-
-
-/*=============== Mario ===============*/
+/* Mario */
 
 .mario {
     width: 60px;
     position: absolute;
     bottom: 0;
-    margin-left: 100px;
+    margin-left: 10%;
     padding-bottom: 34px;
     z-index: 10;
 }
 
-.jump{
+.jump {
     animation: mario-jump-animation 1500ms ease-out;
 }
 
 @keyframes mario-jump-animation {
-    0%{
+    0% {
         bottom: 0px;
     }
-    45%{
-        bottom: 180px
-    }
-    55%{
+    45% {
         bottom: 180px;
     }
-    100%{
-        bottom:0px;
+    55% {
+        bottom: 180px;
     }
-    
+    100% {
+        bottom: 0px;
+    }
 }
 
+/* Scenario */
 
+/* Pipes */
 
-
-
-
-/*=============== Cenário ===============*/
-
-/*Tubulação */
 .pipe {
     position: absolute;
     bottom: 0;
@@ -72,21 +62,21 @@ body{
     z-index: 10;
 }
 
-.pipe-animation{
-    animation: grass-animation 3s infinite linear;
+.pipe-animation {
+    animation: pipe-animation 3s infinite linear;
 }
 
 @keyframes pipe-animation {
-    from{
+    from {
         right: -80px;
     }
-    to{
+    to {
         right: 100%;
     }
-    
 }
 
-/*Grama */
+/* Grass */
+
 .grass {
     position: absolute;
     bottom: 0;
@@ -95,155 +85,90 @@ body{
     padding-bottom: 34px;
 }
 
-.grass-animation{
+.grass-animation {
     animation: grass-animation 3s infinite linear;
 }
 
 @keyframes grass-animation {
-    from{
+    from {
         right: -80px;
     }
-    to{
+    to {
         right: 100%;
     }
-    
 }
 
+/* Floors */
 
-/*Piso*/
 .floor {
-        width: 100% auto;
-        position: absolute;
-        bottom: 0;
-        padding-bottom: 34px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 34px;
 }
-.floor-1{
-    position: absolute;  
+
+.floor-1 {
     z-index: 0;
 }
 
-.floor-animation-1{
+.floor-animation-1 {
     animation: floor-animation-1 3.1s infinite linear;
 }
 
 @keyframes floor-animation-1 {
-    0%{
-        right:0px;
+    0% {
+        right: 0px;
     }
-    100%{
-        right: 100%;    
+    100% {
+        right: 100%;
     }
 }
 
-
-
-
-.floor-2{
-    position: absolute; 
+.floor-2 {
     right: -1500px;
     z-index: 10;
 }
 
-.floor-animation-2{
+.floor-animation-2 {
     animation: floor-animation-2 6.2s infinite linear;
 }
 
 @keyframes floor-animation-2 {
-    0%{
-        right:-1500px;
+    0% {
+        right: -1500px;
     }
-    100%{
-        right: 100%;    
+    100% {
+        right: 100%;
     }
 }
 
-
-
-
-.floor-3{
-    position: absolute;  
+.floor-3 {
     right: -1500px;
     z-index: 10;
 }
 
-.floor-animation-3{
+.floor-animation-3 {
     animation: floor-animation-3 6.2s infinite linear;
 }
 
 @keyframes floor-animation-3 {
-    0%{
-        right:-1500px;
+    0% {
+        right: -1500px;
     }
-    100%{
-        right: 100%;    
+    100% {
+        right: 100%;
     }
 }
 
+/* Clouds */
 
-
-
-/*Nuvens*/
 .clouds-1 {
     position: absolute;
     width: 550px;
-    padding-top: 50px;
-    z-index: 4;
+    top: 50px;
+    left: -550px;
     animation: clouds-animation-1 40s infinite linear;
 }
+
 .clouds-2 {
     position: absolute;
-    width: 270px;
-    padding-top: 150px;
-    z-index: 3;
-    animation: clouds-animation-2 50s infinite linear;
-}
-.clouds-3 {
-    position: absolute;
-    width: 150px;
-    padding-top: 300px;
-    z-index: 2;
-    animation: clouds-animation-3 75s infinite linear;
-}
-
-
-@keyframes clouds-animation-1 {
-    from{
-        right: -550px;
-    }
-
-    to{
-        right: 100%;
-    }
-}
-
-@keyframes clouds-animation-2 {
-    from{
-        right: -1300px;
-    }
-    to{
-        right: 100%;
-    }
-}
-
-@keyframes clouds-animation-3 {
-    from{
-        right: -250px;
-    }
-    to{
-        right: 100%;
-    }
-}
-
-
-p {
-    font-family:'Roboto Mono', monospace;
-    padding: 50px;
-    text-align: auto;
-    color: black;
-}
-
-footer {
-    font-family:'Roboto Mono', monospace;
-    text-align: center;
-    color: rgb(35, 245, 8);
-}
